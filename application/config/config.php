@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 if ($_SERVER['HTTP_HOST']=='localhost:8888') {
-    $config['base_url']     = "http://localhost:8888/templates/veaptv/";
+    $config['base_url']     = "http://localhost:8888/projects/veaptv/";
 } elseif ($_SERVER['HTTP_HOST'=='localhost']) {
     $config['base_url']     = "";
 } else {
