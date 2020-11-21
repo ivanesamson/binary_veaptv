@@ -32,9 +32,9 @@
                                 <div class="col-12 text-center">
                                     <button type="submit" class="btn btn-primary btn-danger btn-contact">Let's talk</button>
                                     <div class="social-icons d-flex justify-content-center align-items-center">
-                                        <a href="#"><i class="fas fa-globe fa-2x"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                                        <a href="https://www.tagline.com.ph/" target="_blank"><i class="fas fa-globe fa-2x"></i></a>
+                                        <a href="https://www.facebook.com/taglinecommunications.ph/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                                        <a href="https://www.linkedin.com/company/tagline-communications-inc--philippines/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
                                     </div>
                                 </div>
                             </div>

@@ -4,11 +4,12 @@
             <div class="event-header">
                 <h3>Jump in.</h3>
                 <p>Enter the event using the code given to you.</p>
+                <?php echo validation_errors(); ?>
             </div>
             <div class="event-body my-6">
-                <form action="login.html" method="post" class="event-form">
+                <form method="post" class="event-form">
                     <div class="input-hashtag" aria-disabled="true">#</div>
-                    <input type="text" class="input-submit" placeholder="Enter Event Code" />
+                    <input type="text" name="event_code" value="<?php echo set_value('event_code'); ?>" size="20" class="input-submit" placeholder="Enter Event Code" />
                     <button type="submit"> <i class="fas fa-arrow-right"></i> </button>
                 </form>
             </div>
