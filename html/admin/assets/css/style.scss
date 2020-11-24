@@ -11,8 +11,11 @@ $lightgray: #333333;
     padding: 0;
     box-sizing: border-box;
 }
-body {
+* {
     font-family: 'Roboto', sans-serif;
+}
+.alert, .brand, .btn-simple, .h1, .h2, .h3, .h4, .h5, .h6, .navbar, .td-name, a, body, button.close, h1, h2, h3, h4, h5, h6, p, td {
+    font-family: 'Roboto',sans-serif;
 }
 
 a,
@@ -23,111 +26,15 @@ a:focus {
     transition: all 0.3s;
 }
 .rounded-10 {
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .btn-danger {
     background: $red;
 }
-.wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-    background-color: #EFEFEF;
-}
-.wrapper.active {
-    #sidebar {
-        // margin-left: -190px;
-        width: 80px;
-        .sidebar-header img {
-            display: none;
-        }
-        ul.main-menu {
-            li.menu-item {
-                display: block;
-                margin: 7px auto;
-                span {
-                    display: none;
-                }
-            }
-            li.menu-section {
-                span, div {
-                    visibility: hidden;
-                }
-            }
-        }
-    }
-    #content {
-        margin-left: 80px;
-        // width: calc(100% - 80px);
-    }   
-}
 
-#sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    overflow: auto;
-    padding: 3vh 0;
-    background: $darkgray;
-    color: #fff;
-    transition: all 0.3s;
-    .sidebar-header {
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        transition: all 0.5s;
-        #sidebarCollapse {
-            transition: all 0.5s;
-        }
-    }
-    ul.main-menu {
-        display: flex;
-        flex-direction: column;
-        margin: 2vh auto;
-        width: 85%;
-        position: relative;
-        li.menu-item {
-            background: $lightgray;
-            box-shadow: inset 0 0 5px #333;
-            margin: 7px 0;
-            padding:.6rem;
-            list-style: none;
-            border-radius: 6px;
-            transition: all 0.5s;
-            cursor: pointer;
-            &:hover {
-                opacity: .6; 
-            }
-            img {
-                margin: 3px 5px 4px 5px;
-            }
-        }
-        li.active {
-            background: $red;
-        }
-        li.menu-section {
-            list-style: none;
-            .border-line {
-                border-top: 4px solid $lightgray;
-                margin: 20px 70px;
-            }
-        }
-    }
+.border-gray {
+    border: 1px solid rgba(51, 50, 50, 0.125);
 }
-#content {
-    margin-left: 250px;
-    position: relative;
-    width: 100%;
-    // width: calc(100% - 250px);
-    float: right;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-}
-
 .title-card {
     .card-body {
         h5 {
@@ -136,10 +43,16 @@ a:focus {
         }
     }
 }
-
-.event-details {
-    
+#event-details {   
     input, button {
-        border-radius: 10px;
+        border-radius: 15px;
+    }
+
+}
+.layout-preview-header {
+    border-top-left-radius: 20px !important; 
+    border-top-right-radius: 20px !important;
+    h5 {
+        font-weight: 400;
     }
 }
