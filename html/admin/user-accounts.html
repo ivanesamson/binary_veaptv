@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Veap TV - Admin</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <link rel="icon" type="image/jpg" href="./assets/img/faviconVeapTV.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    	<!-- Fonts and icons -->
+	<script src="assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			// google: {"families":["Roboto:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+    </script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/atlantis.min.css">
+    <link rel="stylesheet" href="assets/css/atlantis-custom.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main-header">
+            <div class="logo-header" data-background-color="blue">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/veap_logo.png" alt="navbar brand" class="navbar-brand">
+                </a>
+                <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="icon-menu"></i>
+                    </span>
+                </button>
+                <div class="nav-toggle">
+                    <button class="btn btn-toggle toggle-sidebar">
+                        <i class="icon-menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar sidebar-style-2">
+            <div class="sidebar-wrapper scrollbar scrollbar-inner">
+                <div class="sidebar-content">
+                    <ul class="nav nav-primary">
+                        <li class="nav-item inactive">
+                            <a href="dashboard.html" class="collapsed" aria-expanded="false">
+                                <img src="assets/img/dashboard/dashboard.png" class="img-fluid" alt="">
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="nav-section inactive">
+                            <span class="sidebar-mini-icon">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </span>
+                            <h4 class="text-section">EVENT PAGE</h4>
+                        </li>
+                        <li class="nav-item inactive">
+                            <a href="customize.html">
+                                <img src="assets/img/dashboard/setup.png" class="img-fluid" alt="">
+                                <p>Setup</p>
+                            </a>
+                        </li>
+                        <li class="nav-item inactive">
+                            <a href="information.php">
+                                <img src="assets/img/dashboard/customize.png" class="img-fluid" alt="">
+                                <p>Customize</p>
+                            </a>
+                        </li>
+                        <li class="nav-section inactive">
+                            <div class="border-line rounded"></div>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="user.php">
+                                <img src="assets/img/dashboard/user.png" class="img-fluid" alt="">
+                                <p>User Accounts</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item inactive">
+                            <a href="information.html">
+                                <img src="assets/img/dashboard/information.png" class="img-fluid" alt="">
+                                <p>Information</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item inactive">
+                            <a href="media.php">
+                                <img src="assets/img/dashboard/media.png" class="img-fluid" alt="">
+                                <p>Media</p>
+                            </a>
+                        </li>
+                        <li class="nav-item inactive">
+                            <a href="survey.php">
+                                <img src="assets/img/dashboard/surveys.png" class="img-fluid" alt="">
+                                <p>Surveys</p>
+                            </a>
+                        </li>
+                        <li class="nav-section inactive my-5">
+                            <div class="py-1"></div>
+                        </li>
+                        <li class="nav-item inactive">
+                            <a href="survey.php">
+                                <img src="assets/img/dashboard/logout-arrow.png" class="img-fluid" alt="">
+                                <p>Log Out</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-panel">
+            <div class="content">
+                <div class="page-inner">
+                    <div class="card title-card rounded-10">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="left">
+                                <h5 class="card-title">User Accounts</h5>
+                                <p class="card-text">Add user accounts for your event below.</p>
+                            </div>
+                            <div class="right">
+                                <a href="customize.html" role="button" class="btn btn-secondary rounded-10 px-4 mx-2">Previous</a>
+                                <a href="information.html" role="button" class="btn btn-danger rounded-10 px-4">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid px-0 mx-0 my-4 h-100">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5 class="font-weight-bold text-secondary">LAYOUT PREVIEW</h5>
+                                <div class="card py-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Create New Account</h5>
+                                        <p class="card-text">Create a new account for your event.</p>
+                                        <form>
+                                            <div class="form-group px-0">
+                                              <label for="inputName">Name</label>
+                                              <input type="text" class="form-control" id="inputName" name="inputName" placeholder="First Name and Last Name">
+                                            </div>
+                                            <div class="form-group px-0">
+                                              <label for="inputEmail">Email</label>
+                                              <input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email Address">
+                                            </div>
+                                            <div class="form-group px-0">
+                                              <label for="inputPassword">Password</label>
+                                              <input type="text" class="form-control" id="inputPassword" name="inputPassword" placeholder="Email Address">
+                                            </div>
+                                            <div class="form-group px-0">
+                                              <label for="inputContact">Contact Number</label>
+                                              <input type="text" class="form-control" id="inputContact" name="inputContact" placeholder="Contact eg. 0912-345-6789">
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <p class="text-muted m-0">Creating an account send an email to the user</p>
+                                                <button type="submit" class="btn btn-success">Add Account</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="font-weight-bold text-secondary">MANAGE ACCOUNTS</h5>
+                                <div class="card title-card">
+                                    <div class="card-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">NAME</th>
+                                                    <th scope="col">Email</th>
+                                                    <th scope="col">PASSWORD</th>
+                                                    <th scope="col">OPTIONS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid d-flex justify-content-end">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Veap.tv Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                VEAP Main
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="copyright bg-light">
+                        Powered by Binary Digital, 2020
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- Atlantis -->
+    <script src="assets/js/atlantis.min.js"></script>
+    <script src="assets/js/atlantis-settings.js"></script>
+</body>
+</html>
