@@ -6374,4 +6374,13 @@ a:focus {
         align-self: flex-end;
   }
 }
+
+.layout-preview-header {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.layout-preview-header h5 {
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */
