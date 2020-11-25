@@ -62,13 +62,13 @@
                             <h4 class="text-section">EVENT PAGE</h4>
                         </li>
                         <li class="nav-item inactive">
-                            <a href="customize.html">
+                            <a href="setup.html">
                                 <img src="assets/img/dashboard/setup.png" class="img-fluid" alt="">
                                 <p>Setup</p>
                             </a>
                         </li>
                         <li class="nav-item inactive">
-                            <a href="information.php">
+                            <a href="customize.html">
                                 <img src="assets/img/dashboard/customize.png" class="img-fluid" alt="">
                                 <p>Customize</p>
                             </a>
@@ -77,27 +77,25 @@
                             <div class="border-line rounded"></div>
                         </li>
                         <li class="nav-item active">
-                            <a href="user.php">
+                            <a href="user-accounts.html">
                                 <img src="assets/img/dashboard/user.png" class="img-fluid" alt="">
                                 <p>User Accounts</p>
                             </a>
                         </li>
-
                         <li class="nav-item inactive">
                             <a href="information.html">
                                 <img src="assets/img/dashboard/information.png" class="img-fluid" alt="">
                                 <p>Information</p>
                             </a>
                         </li>
-
                         <li class="nav-item inactive">
-                            <a href="media.php">
+                            <a href="media.html">
                                 <img src="assets/img/dashboard/media.png" class="img-fluid" alt="">
                                 <p>Media</p>
                             </a>
                         </li>
                         <li class="nav-item inactive">
-                            <a href="survey.php">
+                            <a href="survey.html">
                                 <img src="assets/img/dashboard/surveys.png" class="img-fluid" alt="">
                                 <p>Surveys</p>
                             </a>
@@ -106,7 +104,7 @@
                             <div class="py-1"></div>
                         </li>
                         <li class="nav-item inactive">
-                            <a href="survey.php">
+                            <a href="survey.html">
                                 <img src="assets/img/dashboard/logout-arrow.png" class="img-fluid" alt="">
                                 <p>Log Out</p>
                             </a>
@@ -119,8 +117,8 @@
             <div class="content">
                 <div class="page-inner">
                     <div class="card title-card rounded-10">
-                        <div class="card-body d-flex justify-content-between align-items-center">
-                            <div class="left">
+                        <div class="card-body  card-title-bar d-flex justify-content-between align-items-center">
+                            <div class="left" style="flex: 1;">
                                 <h5 class="card-title">User Accounts</h5>
                                 <p class="card-text">Add user accounts for your event below.</p>
                             </div>
@@ -132,13 +130,13 @@
                     </div>
                     <div class="container-fluid px-0 mx-0 my-4 h-100">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-lg-4">
                                 <h5 class="font-weight-bold text-secondary">LAYOUT PREVIEW</h5>
                                 <div class="card py-4">
-                                    <div class="card-body">
+                                    <div class="card-body" id="user-accounts">
                                         <h5 class="card-title">Create New Account</h5>
                                         <p class="card-text">Create a new account for your event.</p>
-                                        <form>
+                                        <form class="">
                                             <div class="form-group px-0">
                                               <label for="inputName">Name</label>
                                               <input type="text" class="form-control" id="inputName" name="inputName" placeholder="First Name and Last Name">
@@ -156,14 +154,14 @@
                                               <input type="text" class="form-control" id="inputContact" name="inputContact" placeholder="Contact eg. 0912-345-6789">
                                             </div>
                                             <div class="d-flex justify-content-between mt-3">
-                                                <p class="text-muted m-0">Creating an account send an email to the user</p>
-                                                <button type="submit" class="btn btn-success">Add Account</button>
+                                                <p class="text-muted m-0" style="flex: 1; line-height: 1.5;">Creating an account send an email to the user</p>
+                                                <button type="submit" class="btn btn-success rounded-10">Add Account</button>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-8">
+                            <div class="col-lg-8">
                                 <h5 class="font-weight-bold text-secondary">MANAGE ACCOUNTS</h5>
                                 <div class="card title-card">
                                     <div class="card-body">

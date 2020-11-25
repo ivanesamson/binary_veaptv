@@ -6168,7 +6168,211 @@ a:focus {
 }
 
 #event-details input, #event-details button {
+  border-radius: 15px;
+}
+
+#event-details .formEventName, #event-details .formEventCode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+#event-details .formEventName .left, #event-details .formEventCode .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.layout-preview-header {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.layout-preview-header h5 {
+  font-weight: 400;
+}
+
+.media .card-body {
+  height: 50vh !important;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  overflow-y: scroll;
+}
+
+.media .card-body .media-list {
+  width: 90%;
+  margin: auto auto 80px auto;
+}
+
+.media .card-body .media-list li.media-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid #ccc;
   border-radius: 10px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.media .card-body .media-list li.media-item:hover {
+  opacity: 0.8;
+}
+
+.media .card-body .media-list li.media-item .media-name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 4px;
+}
+
+.media .card-body .media-list li.media-item button {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  border: 0;
+}
+
+.media .card-body .media-list li.media-item button.trash-media {
+  color: #B80000;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.media .card-body .media-list li.media-item img {
+  border-radius: 5px;
+}
+
+.media .card-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.media button {
+  border-radius: 5px;
+}
+
+#setup input, #setup textarea, #information input, #information textarea, #user-accounts input, #user-accounts textarea, .formSurvey input, .formSurvey textarea {
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+#setup textarea, #information textarea, #user-accounts textarea, .formSurvey textarea {
+  resize: none;
+}
+
+.img-name, .video-name, .document-name, .media-name {
+  white-space: nowrap;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.survey-list .survey-item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.survey-list .survey-item .survey-question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.survey-list .survey-item .survey-question input.input-survey {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: .5rem 0 0;
+  font-weight: 600;
+  border: none;
+  border-bottom: 4px solid gray;
+}
+
+.survey-list .survey-item .survey-question input.input-survey::focus {
+  -webkit-box-shadow: inset 10px 10px 10px #79bfd6 !important;
+          box-shadow: inset 10px 10px 10px #79bfd6 !important;
+}
+
+.survey-list .survey-item .survey-question button {
+  cursor: pointer;
+  color: #B80000;
+  border: none;
+  background-color: #fff;
+}
+
+.survey-list .survey-item .optional input.input-optional {
+  border: 1px solid gray;
+  width: 97%;
+}
+
+.survey-list .survey-item .optional .survey-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.survey-list .survey-item .optional .survey-options .option-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.survey-list .survey-item .optional .survey-options .option-container input {
+  border: 1px solid gray;
+}
+
+@media screen and (max-width: 559px) {
+  .card-title-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .card-title-bar .left {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .card-title-bar .right {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 .layout-preview-header {

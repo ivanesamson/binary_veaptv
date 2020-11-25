@@ -1,3 +1,13 @@
+.btn-secondary {
+  background: darkgray !important;
+  border: darkgray !important;
+}
+
+.btn-secondary:disabled, .btn-secondary:focus, .btn-secondary:hover {
+  background: dimgray !important;
+  border: dimgray !important;
+}
+
 .sidebar .sidebar-wrapper, .sidebar[data-background-color=white] .sidebar-wrapper {
   width: 95%;
   margin: 10px auto;
@@ -61,11 +71,6 @@
 
 .text-secondary, .text-secondary:hover {
   color: dimgray !important;
-}
-
-.btn-secondary {
-  background: dimgray !important;
-  border: dimgray !important;
 }
 
 .main-header {

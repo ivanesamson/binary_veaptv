@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" type="image/jpg" href="./assets/img/faviconVeapTV.jpg">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>VEAPTV</title>
 </head>
@@ -27,11 +27,11 @@
                     FEATURES
                 </a>
             </li>
-            <li class="menu-links">
+            <!-- <li class="menu-links">
                 <a href="pricing.html">
                     PRICING
                 </a>
-            </li>
+            </li> -->
             <li class="menu-links">
                 <a href="contact.html">
                     CONTACT
@@ -50,13 +50,13 @@
         </div>
     </nav>
     <section class="main-login py-5">
-        <article class="right-align">
-            <div class="event-login login">
-                <div class="event-header login-header">
-                    <h3 class="lime">VEAPtv</h3>
-                    <p>Login using your given credentials</p>
-                </div>
-                <form action="event.html">
+        <article class="event-login">
+            <div class="event-header login-header">
+                <h3 class="lime">VEAPtv</h3>
+                <p>Login using your given credentials</p>
+            </div>
+            <div class="event-body">
+                <form action="event.html" class="loginForm">
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <input type="text" class="form-control" id="inputUs" placeholder="Email">
@@ -70,7 +70,6 @@
                     <button type="submit" class="btn btn-success btn-block btn-login">Enter Event</button>
                     <button type="button" class="btn btn-default btn-block text-success">Register</button>
                 </form>
-
             </div>
         </article>
         
@@ -86,7 +85,9 @@
             <li><a href="https://tagline.com.ph/" target="_blank">The Tagline Group</a></li>
         </ul>
     </nav>
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>

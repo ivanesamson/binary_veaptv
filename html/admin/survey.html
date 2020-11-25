@@ -76,25 +76,27 @@
                         <li class="nav-section inactive">
                             <div class="border-line rounded"></div>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item inactive">
                             <a href="user-accounts.html">
                                 <img src="assets/img/dashboard/user.png" class="img-fluid" alt="">
                                 <p>User Accounts</p>
                             </a>
                         </li>
+
                         <li class="nav-item inactive">
                             <a href="information.html">
                                 <img src="assets/img/dashboard/information.png" class="img-fluid" alt="">
                                 <p>Information</p>
                             </a>
                         </li>
+
                         <li class="nav-item inactive">
                             <a href="media.html">
                                 <img src="assets/img/dashboard/media.png" class="img-fluid" alt="">
                                 <p>Media</p>
                             </a>
                         </li>
-                        <li class="nav-item inactive">
+                        <li class="nav-item active">
                             <a href="survey.html">
                                 <img src="assets/img/dashboard/surveys.png" class="img-fluid" alt="">
                                 <p>Surveys</p>
@@ -117,37 +119,78 @@
             <div class="content">
                 <div class="page-inner">
                     <div class="card title-card rounded-10">
-                        <div class="card-body card-title-bar d-flex justify-content-between align-items-center">
+                        <div class="card-body  card-title-bar d-flex justify-content-between align-items-center">
                             <div class="left" style="flex: 1;">
-                                <h5 class="card-title">Information</h5>
-                                <p class="card-text">Add event descriptions and other information below.</p>
+                                <h5 class="card-title">Survey</h5>
+                                <p class="card-text">Gather opinions from your audience by creating your own event survey below.</p>
                             </div>
                             <div class="right">
-                                <a href="media.html" role="button" class="btn btn-secondary rounded-10 px-4 mx-2">Previous</a>
-                                <a href="surveys.html" role="button" class="btn btn-danger rounded-10 px-4">Next</a>
+                                <a href="information.html" role="button" class="btn btn-secondary rounded-10 px-4 mx-2">Previous</a>
                             </div>
                         </div>
                     </div>
                     <div class="container-fluid px-0 mx-0 my-4 h-100">
                         <div class="row">
-                            <div class="col-sm-8 mx-auto">
-                                <h5 class="font-weight-bold text-secondary">INFORMATION FIELDS</h5>
+                            <div class="col-md-4">
+                                <h5 class="font-weight-bold text-secondary">SURVEY DETAILS</h5>
                                 <div class="card title-card">
                                     <div class="card-body">
-                                        <form id="information">
-                                            <div class="form-group px-0">
-                                              <label for="inputName">Headline</label>
-                                              <input type="text" class="form-control" id="inputName" name="inputName" placeholder="First Name and Last Name">
+                                        <form class="formSurvey">
+                                            <div class="form-group">
+                                                <label for="survey">Email address</label>
+                                                <input type="text" class="form-control" name="inputSurvey" placeholder="Survey Title">
                                             </div>
-                                            <div class="form-group px-0">
-                                                <label for="inputBodyText">Body Text</label>
-                                                <textarea class="form-control" name="inputBodyText" rows="10" style="resize: none;"></textarea>
+                                            <div class="form-group">
+                                                <label for="inputBodyText">Survey Description</label>
+                                                <textarea class="form-control" name="inputSurveyDesc" rows="6" style="resize: none;"></textarea>
                                             </div>
                                             <div class="d-flex justify-content-end">
-                                                <a href="#" role="button" class="btn btn-success rounded-10 px-4 m-2">Save</a>
                                                 <a href="#" role="button" class="btn btn-primary rounded-10 px-4 m-2">Preview</a>
+                                                <a href="#" role="button" class="btn btn-success rounded-10 px-4 m-2">Save</a>
                                             </div>
                                         </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 mx-auto">
+                                <h5 class="font-weight-bold text-secondary">SURVEY QUESTIONS</h5>
+                                <div class="card title-card py-3" id="survey-item">
+                                    <div class="card-body">
+                                        <ul class="survey-list">
+                                            <li class="survey-item">
+                                                <div class="survey-question">
+                                                    <input type="text" name="inputSurvey" class="input-survey">
+                                                    <button class="trash-survey"><i class="fas fa-trash"></i></button> 
+                                                </div>
+                                                <div class="optional">
+                                                    <div class="form-group px-0">
+                                                        <input type="text" name="inputOptional" class="form-control input-optional" id="" placeholder="Optional Question Details">
+                                                    </div>
+                                                    <div class="survey-options">
+                                                        <div class="radio-container d-flex align-items-center">
+                                                            <input type="radio" name="option1" checked="checked" name="radio">
+                                                            <span class="checkmark"></span>
+                                                        </div>
+                                                        <div class="option-container form-group px-0">
+                                                            <input type="text" name="inputOptional" class="form-control" id="" placeholder="Optional Question Details">
+                                                        </div>
+                                                    </div>
+                                                    <div class="survey-options">
+                                                        <div class="radio-container d-flex align-items-center">
+                                                            <input type="radio" name="option1" checked="checked" name="radio">
+                                                        </div>
+                                                        <div class="option-container form-group px-0">
+                                                            <input type="text" name="inputOptional" class="form-control" id="" placeholder="Optional Question Details">
+                                                        </div>
+                                                    </div>
+                                                    <div class="survey-options">
+                                                        <div class="mx-1 px-1"></div>
+                                                        <button class="btn btn-secondary btn-block">Add Option</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-secondary btn-block">Add Question</button>
                                     </div>
                                 </div>
                             </div>

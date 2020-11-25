@@ -1,5 +1,9 @@
 $red: #B80000;
 .btn-secondary {
+    background: darkgray !important;
+    border: darkgray !important;
+}
+.btn-secondary:disabled, .btn-secondary:focus, .btn-secondary:hover {
     background: dimgray !important;
     border: dimgray !important;
 }
