@@ -156,7 +156,7 @@ section.main-login {
                     width: 100%;
                     height: calc(1.5em + .75rem + 2px);
                     padding: .375rem .75rem;
-                    font-size: 1rem;
+                    font-size: .9rem;
                     font-weight: 400;
                     line-height: 1.5;
                     color: #495057;
@@ -207,6 +207,7 @@ section.main-login {
                 font-weight: 700;
                 text-decoration: none; 
                 color: #b80000;
+                cursor: pointer;
             }
             .divider {
                 color: #000;
@@ -222,6 +223,11 @@ section.main-login {
                 border-radius: 10px;
             }
         }
+    }
+}
+.loginForm {
+    input, button {
+        border-radius: 10px;
     }
 }
 nav.footer-nav {    
@@ -335,7 +341,7 @@ nav.footer-nav {
         p.card-text {
             width: 90%;
             margin: auto;
-            font-size: 1rem; 
+            font-size: .9rem; 
         }
     }
 }
@@ -671,4 +677,3 @@ nav.footer-nav {
     }
     
 }
-//0
