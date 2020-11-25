@@ -1,0 +1,120 @@
+<<<<<<< HEAD
+.btn-secondary {
+  background: darkgray !important;
+  border: darkgray !important;
+}
+
+.btn-secondary:disabled, .btn-secondary:focus, .btn-secondary:hover {
+  background: dimgray !important;
+  border: dimgray !important;
+}
+
+=======
+>>>>>>> f89979fb64b8748d62532c66670b71888659da00
+.sidebar .sidebar-wrapper, .sidebar[data-background-color=white] .sidebar-wrapper {
+  width: 95%;
+  margin: 10px auto;
+}
+
+.logo-header .logo .navbar-brand {
+  background: #141414;
+}
+
+.sidebar, .sidebar[data-background-color=white] {
+  background: #141414 !important;
+}
+
+.sidebar.sidebar-style-2 .nav.nav-primary > .nav-item.active > a,
+.sidebar.sidebar-style-2 .nav.nav-primary > .nav-item.inactive > a {
+  -webkit-box-shadow: inset 0 0 5px #333 !important;
+          box-shadow: inset 0 0 5px #333 !important;
+}
+
+.sidebar .nav .nav-section .text-section, .sidebar[data-background-color=white] .nav .nav-section .text-section {
+  padding: 2px 17px;
+  font-size: 14px;
+}
+
+.sidebar .nav > .nav-item a, .sidebar[data-background-color=white] .nav > .nav-item a {
+  margin-bottom: 10px;
+}
+
+.sidebar.sidebar-style-2 .nav .nav-item:hover {
+  opacity: 0.8;
+}
+
+.sidebar .nav > .nav-item a p, .sidebar[data-background-color=white] .nav > .nav-item a p {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 400 !important;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.sidebar .nav > .nav-section > .border-line {
+  border-top: 4px solid #262626;
+  margin: 20px 90px;
+}
+
+.sidebar_minimize .nav .nav-item img {
+  display: block;
+  margin: auto;
+}
+
+.card {
+  border: 1px solid rgba(51, 50, 50, 0.125);
+  -webkit-box-shadow: 2px 6px 15px 0 rgba(69, 65, 78, 0);
+          box-shadow: 2px 6px 15px 0 rgba(69, 65, 78, 0);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-secondary, .text-secondary:hover {
+  color: dimgray !important;
+}
+
+<<<<<<< HEAD
+=======
+.btn-secondary {
+  background: dimgray !important;
+  border: dimgray !important;
+}
+
+>>>>>>> f89979fb64b8748d62532c66670b71888659da00
+.main-header {
+  height: 50px;
+}
+
+body, .main-panel, .footer {
+  background: #EFEFEF;
+}
+
+.footer .nav {
+  background: #fff;
+  border-radius: 20px;
+  color: #B80000;
+}
+
+@media screen and (min-width: 992px) {
+  .logo-header .logo {
+    position: absolute;
+    top: 20px;
+    left: 55px;
+  }
+  .sidebar .nav, .sidebar[data-background-color=white] .nav {
+    margin-top: 30px;
+  }
+  .main-panel > .content {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar .nav, .sidebar[data-background-color=white] .nav {
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=atlantis-custom.css.map */

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 21, 2020 at 10:21 AM
+-- Generation Time: Nov 21, 2020 at 06:14 PM
 -- Server version: 5.7.30
 -- PHP Version: 7.4.9
 
@@ -22,7 +22,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `account_documents_tb` (
   `doc_id` bigint(20) NOT NULL,
-  `event_code` varchar(25) NOT NULL,
+  `account_id` bigint(10) NOT NULL,
   `doc_link` varchar(100) NOT NULL,
   `doc_type` varchar(10) NOT NULL,
   `status_flag` tinyint(1) NOT NULL DEFAULT '1',
@@ -38,7 +38,7 @@ CREATE TABLE `account_documents_tb` (
 
 CREATE TABLE `account_information_tb` (
   `info_id` bigint(10) NOT NULL,
-  `event_code` varchar(25) NOT NULL,
+  `account_id` bigint(10) NOT NULL,
   `headline` varchar(100) NOT NULL,
   `description` text NOT NULL,
   `status_flag` tinyint(1) NOT NULL DEFAULT '1',
@@ -85,7 +85,7 @@ INSERT INTO `account_info_tb` (`account_id`, `event_code`, `event_name`, `broadc
 
 CREATE TABLE `account_media_tb` (
   `media_id` bigint(10) NOT NULL,
-  `event_code` varchar(25) NOT NULL,
+  `account_id` bigint(10) NOT NULL,
   `photo_link` varchar(100) NOT NULL,
   `photo_type` varchar(10) NOT NULL,
   `status_flag` tinyint(1) NOT NULL DEFAULT '1',
@@ -101,7 +101,7 @@ CREATE TABLE `account_media_tb` (
 
 CREATE TABLE `account_surveys_tb` (
   `survey_id` bigint(10) NOT NULL,
-  `event_code` varchar(25) NOT NULL,
+  `account_id` bigint(10) NOT NULL,
   `title` varchar(100) NOT NULL,
   `description` varchar(250) NOT NULL,
   `status_flag` tinyint(1) NOT NULL DEFAULT '1',
@@ -117,7 +117,7 @@ CREATE TABLE `account_surveys_tb` (
 
 CREATE TABLE `account_users_tb` (
   `user_id` bigint(10) NOT NULL,
-  `event_code` varchar(25) NOT NULL,
+  `account_id` bigint(10) NOT NULL,
   `name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL,
@@ -136,7 +136,7 @@ CREATE TABLE `account_users_tb` (
 
 CREATE TABLE `account_videos_tb` (
   `video_id` bigint(10) NOT NULL,
-  `event_code` varchar(25) NOT NULL,
+  `account_id` bigint(10) NOT NULL,
   `video_url` varchar(100) NOT NULL,
   `video_link` varchar(100) NOT NULL,
   `video_type` varchar(10) NOT NULL,
