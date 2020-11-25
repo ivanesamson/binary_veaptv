@@ -15,7 +15,7 @@ body.body-1 {
     background: url(../img/bg-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: bottom;
     height: 100vh;
     background-attachment: fixed;
 }
@@ -43,6 +43,7 @@ body {
 .container-fluid-custom { width: 93%; }
 .btn-danger { background: $red; }
 .py-5 { padding: 3rem 0; }
+
 @mixin rounded {
     border-radius: 15px;
 }
@@ -125,18 +126,20 @@ section.main-login {
         margin-left: auto;
         background: #fff;
         min-width: 25vw;
-        min-height: 65vh;
+        min-height: 60vh;
         box-shadow: 1px 2px 10px #3b3939;
         padding: 8vh 0 3vh;
+        overflow-y: auto;
         @include rounded();
         .event-header {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             text-align: center;
             h3 {
                 font-size: 2.5rem;
                 font-weight: bold;
                 color: $red;
+                word-wrap: break-word;
             }
             p{
                 font-size: 1rem;
@@ -236,7 +239,7 @@ nav.footer-nav {
     align-items: center;
     z-index: 2;
     background: (0,0);
-    padding: 3vh 5vh;
+    padding: 2vh 5vh;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -299,10 +302,10 @@ nav.footer-nav {
 
 #features, #contact, #about {
     .feature-indicators {
-        bottom: -8vh;
+        bottom: 0;
         li {
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
             border: 3px solid $red;
             background-color: rgb(240, 57, 57);
@@ -311,7 +314,7 @@ nav.footer-nav {
     }
     
     .card {
-        padding-bottom: 7vh;
+        padding-bottom: 4vh;
         h5.title-features {
             font-size: 1rem;
         }
@@ -341,7 +344,7 @@ nav.footer-nav {
         p.card-text {
             width: 90%;
             margin: auto;
-            font-size: .9rem; 
+            font-size: .8rem; 
         }
     }
 }
@@ -452,10 +455,8 @@ nav.footer-nav {
         }
         .card-body-tab {
             height: 75vh;
-            &:hover {
-                overflow-y: scroll;
-                overflow-x: hidden;
-            }
+            overflow-y: auto;
+            overflow-x: hidden;
             #tab-content {
                 .survey-tab fieldset label{
                     margin-left: 0.8vw;
@@ -469,7 +470,7 @@ nav.footer-nav {
         }
     }
     .events-ads {
-        transform: rotate(90deg);
+        // transform: rotate(90deg);
         img {
             max-width: 100vh;
             max-height: 100vw;
@@ -479,10 +480,15 @@ nav.footer-nav {
     }
     .embed-video { height: 65vh; }
 }
-
+.carousel-inner {
+    height: 60vh;
+    overflow-y: auto;   
+}
 @media (max-width: 1439px) {
     section.main-login article.event-login {
-        min-width: 30vw;
+        min-width: 25vw;
+        max-width: 30%;
+        max-height: 75vh;
     }
 }
 @media (max-width: 1023px) {
@@ -509,15 +515,15 @@ nav.footer-nav {
         min-width: 60vw;
     }
     #events .col-lg-1 {
-        margin: 0 1.7vw;
+        // margin: 0 1.7vw;
     }
     #events .events-ads {
-        transform: rotate(0deg);
-        width: 100vw;
-        img {
-            width: 100vw;
-            max-height: 15vh;
-        }
+        // transform: rotate(0deg);
+        // width: 100vw;
+        // img {
+        //     width: 100vw;
+        //     max-height: 15vh;
+        // }
     }
     nav.footer-nav {
         flex-direction: column-reverse;
@@ -639,7 +645,11 @@ nav.footer-nav {
         position: relative;
     } 
 }
-
+@media (max-width: 575px) {
+    .carousel-inner {
+        height: auto;   
+    }
+}
 @media (max-width: 559px) {
     .lh-16, .event-tab { 
         margin: auto;
