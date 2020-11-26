@@ -54,6 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // Users Routes
+$route['users/code'] = 'users/Users/code';
 $route['users/login'] = 'users/Users/login';
 $route['users/register'] = 'users/Users/register';
 $route['users/request-password'] = 'users/Users/forgot_password';
@@ -61,3 +62,4 @@ $route['about'] = 'users/Users/about';
 $route['features'] = 'users/Users/features';
 $route['contact'] = 'users/Users/contact';
 $route['privacy'] = 'users/Users/privacy';
+

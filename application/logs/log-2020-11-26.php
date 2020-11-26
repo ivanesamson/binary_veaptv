@@ -256,3 +256,59 @@ ERROR - 2020-11-26 08:26:24 --> 404 Page Not Found: users/Public/users
 ERROR - 2020-11-26 08:26:24 --> 404 Page Not Found: users/Public/users
 ERROR - 2020-11-26 08:26:24 --> 404 Page Not Found: users/Public/users
 ERROR - 2020-11-26 08:26:24 --> 404 Page Not Found: users/Public/users
+ERROR - 2020-11-26 08:56:58 --> Severity: Notice --> Undefined variable: footer C:\xampp\htdocs\server\projects\veaptv\application\views\index.php 12
+ERROR - 2020-11-26 08:57:25 --> Severity: Notice --> Undefined variable: footer_class C:\xampp\htdocs\server\projects\veaptv\application\views\index.php 12
+ERROR - 2020-11-26 08:57:36 --> Severity: Notice --> Undefined variable: footer_class C:\xampp\htdocs\server\projects\veaptv\application\views\index.php 12
+ERROR - 2020-11-26 08:57:40 --> Severity: Notice --> Undefined variable: footer_class C:\xampp\htdocs\server\projects\veaptv\application\views\index.php 12
+ERROR - 2020-11-26 08:57:58 --> Severity: Notice --> Undefined variable: footer_class C:\xampp\htdocs\server\projects\veaptv\application\views\index.php 12
+ERROR - 2020-11-26 08:58:02 --> Severity: Notice --> Undefined variable: footer_class C:\xampp\htdocs\server\projects\veaptv\application\views\index.php 12
+ERROR - 2020-11-26 08:58:52 --> Severity: Notice --> Undefined variable: footer_class C:\xampp\htdocs\server\projects\veaptv\application\views\index.php 12
+ERROR - 2020-11-26 09:31:07 --> Severity: error --> Exception: syntax error, unexpected '}', expecting ',' or ';' C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 54
+ERROR - 2020-11-26 09:31:12 --> Severity: error --> Exception: syntax error, unexpected '}', expecting ',' or ';' C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 54
+ERROR - 2020-11-26 09:34:09 --> 404 Page Not Found: users/Login_user/index
+ERROR - 2020-11-26 09:34:15 --> 404 Page Not Found: users/Login_user/index
+ERROR - 2020-11-26 09:34:15 --> 404 Page Not Found: users/Login_user/index
+ERROR - 2020-11-26 10:10:36 --> Severity: Notice --> Undefined variable: custom_css C:\xampp\htdocs\server\projects\veaptv\application\views\index.php 10
+ERROR - 2020-11-26 10:11:05 --> Severity: Notice --> Array to string conversion C:\xampp\htdocs\server\projects\veaptv\application\views\index.php 10
+ERROR - 2020-11-26 10:28:01 --> Severity: error --> Exception: Call to a member function helper() on null C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 6
+ERROR - 2020-11-26 12:04:38 --> 404 Page Not Found: users/Users/Users
+ERROR - 2020-11-26 12:07:24 --> 404 Page Not Found: users/Users/Users
+ERROR - 2020-11-26 12:33:56 --> Severity: Warning --> date() expects at least 1 parameter, 0 given C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 94
+ERROR - 2020-11-26 12:33:56 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\users_model.php 6
+ERROR - 2020-11-26 12:34:46 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\users_model.php 6
+ERROR - 2020-11-26 12:35:07 --> Severity: Notice --> Undefined property: Users::$Users_model C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 96
+ERROR - 2020-11-26 12:35:07 --> Severity: error --> Exception: Call to a member function insert() on null C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 96
+ERROR - 2020-11-26 12:35:41 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\users_model.php 6
+ERROR - 2020-11-26 12:37:29 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\users_model.php 6
+ERROR - 2020-11-26 12:38:14 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\users_model.php 6
+ERROR - 2020-11-26 12:39:17 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\users_model.php 6
+ERROR - 2020-11-26 12:39:18 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\users_model.php 6
+ERROR - 2020-11-26 12:41:47 --> Severity: Notice --> Undefined property: Users::$Users_model C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 93
+ERROR - 2020-11-26 12:41:47 --> Severity: error --> Exception: Call to a member function insert() on null C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 93
+ERROR - 2020-11-26 12:43:02 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\Users_model.php 11
+ERROR - 2020-11-26 12:43:29 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\Users_model.php 10
+ERROR - 2020-11-26 12:43:59 --> Severity: error --> Exception: Call to undefined function insert() C:\xampp\htdocs\server\projects\veaptv\application\models\Users_model.php 11
+ERROR - 2020-11-26 12:58:43 --> Could not find the language line "form_validation_xss_clean"
+ERROR - 2020-11-26 12:58:47 --> Could not find the language line "form_validation_xss_clean"
+ERROR - 2020-11-26 12:59:08 --> Could not find the language line "form_validation_xss_clean"
+ERROR - 2020-11-26 12:59:14 --> Could not find the language line "form_validation_is_unique[account_users_tb.email"
+ERROR - 2020-11-26 12:59:21 --> Could not find the language line "form_validation_is_unique[account_users_tb.email"
+ERROR - 2020-11-26 12:59:25 --> Could not find the language line "form_validation_is_unique[account_users_tb.email"
+ERROR - 2020-11-26 14:32:14 --> 404 Page Not Found: users/Users/Users
+ERROR - 2020-11-26 14:32:35 --> 404 Page Not Found: users/Users/Users
+ERROR - 2020-11-26 14:56:40 --> Severity: error --> Exception: syntax error, unexpected '}', expecting ',' or ';' C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 79
+ERROR - 2020-11-26 14:57:04 --> Severity: Notice --> Undefined property: Users::$Event_model C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 74
+ERROR - 2020-11-26 14:57:04 --> Severity: error --> Exception: Call to a member function event_exist() on null C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 74
+ERROR - 2020-11-26 15:15:28 --> Severity: error --> Exception: Call to undefined method Events_model::get_code() C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 74
+ERROR - 2020-11-26 15:17:25 --> Severity: Notice --> Trying to get property 'event_code' of non-object C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 75
+ERROR - 2020-11-26 15:18:10 --> Severity: error --> Exception: syntax error, unexpected ';', expecting ',' or ')' C:\xampp\htdocs\server\projects\veaptv\application\controllers\users\Users.php 75
+ERROR - 2020-11-26 15:20:46 --> Severity: Notice --> Trying to get property 'event_code' of non-object C:\xampp\htdocs\server\projects\veaptv\application\models\Events_model.php 14
+ERROR - 2020-11-26 15:34:35 --> 404 Page Not Found: users/Users/Users
+ERROR - 2020-11-26 15:49:28 --> 404 Page Not Found: Users/Login_code/index
+ERROR - 2020-11-26 15:51:11 --> 404 Page Not Found: Users/Login_code/index
+ERROR - 2020-11-26 15:51:25 --> 404 Page Not Found: Users/Login_code/index
+ERROR - 2020-11-26 15:52:07 --> 404 Page Not Found: users/Users/Users
+ERROR - 2020-11-26 15:56:34 --> 404 Page Not Found: Users/Login_code/index
+ERROR - 2020-11-26 15:59:14 --> 404 Page Not Found: Login/index
+ERROR - 2020-11-26 16:14:10 --> 404 Page Not Found: users/Eventhtml/index
+ERROR - 2020-11-26 16:57:57 --> 404 Page Not Found: users/Eventhtml/index

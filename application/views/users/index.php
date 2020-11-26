@@ -5,16 +5,17 @@
             <p>Enter the event using the code given to you.</p>
         </div>
         <div class="event-body my-6">
-            <form action="<?=base_url('users/login');?>" method="post" class="event-form">
+            <form id="eventLoginCodeForm" class="event-form">
                 <div class="input-hashtag" aria-disabled="true">#</div>
-                <input type="text" class="input-submit" placeholder="Enter Event Code" />
-                <button type="submit"> <i class="fas fa-arrow-right"></i> </button>
+                <input type="text" name="eventCode" class="input-submit" placeholder="Enter Event Code" />
+                <button type="submit" id="btnSubmit"> <i class="fas fa-arrow-right"></i> </button>
             </form>
+            <div class="error-container"></div>
         </div>
         <div class="event-footer mt-auto">
             <a type="button" class="need-help" data-toggle="modal" data-target="#needHelpModal">Need Help?</a>
             <span class="divider" style="user-select: none;">&nbsp;|&nbsp;</span>
-            <a href="<?=base_url('');?>" class="register">Register</a>
+            <a href="<?=base_url('users/register');?>" class="register">Register</a>
         </div>
     </article>
 </section>
