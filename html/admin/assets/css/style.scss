@@ -46,7 +46,7 @@ a:focus {
 }
 #event-details {   
     input, button {
-        border-radius: 15px;
+        border-radius: 10px;
     }
     .formEventName, .formEventCode {
         display: flex;
@@ -190,6 +190,23 @@ a:focus {
     }
 }
 
+#livePollCard.disabled, #informationCard.disabled, #mediaCard.disabled, #surveyCard.disabled {
+    background: lightgray;
+    h5,p,input,button,a,textarea {
+        pointer-events: none;
+        user-select: none;
+        background: transparent;
+    }
+    textarea, input {
+        border: 1px solid gray !important;
+        background: transparent;
+    }
+    button {
+        border: 1px solid gray !important;
+        background-color: gray !important;
+        color: #3c3c3e;
+    }
+}
 @media screen and (max-width: 559px) {
     .card-title-bar {
         flex-flow: column;

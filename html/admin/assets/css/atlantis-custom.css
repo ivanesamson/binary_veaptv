@@ -23,8 +23,8 @@
 
 .sidebar.sidebar-style-2 .nav.nav-primary > .nav-item.active > a,
 .sidebar.sidebar-style-2 .nav.nav-primary > .nav-item.inactive > a {
-  -webkit-box-shadow: inset 0 0 5px #333 !important;
-          box-shadow: inset 0 0 5px #333 !important;
+  -webkit-box-shadow: inset 0 0 5px transparent !important;
+          box-shadow: inset 0 0 5px transparent !important;
 }
 
 .sidebar .nav .nav-section .text-section, .sidebar[data-background-color=white] .nav .nav-section .text-section {
@@ -51,6 +51,10 @@
 .sidebar .nav > .nav-section > .border-line {
   border-top: 4px solid #262626;
   margin: 20px 90px;
+}
+
+.sidebar.sidebar-style-2 .nav .nav-item a {
+  padding: 4px 10px;
 }
 
 .sidebar_minimize .nav .nav-item img {

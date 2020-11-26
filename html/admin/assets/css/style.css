@@ -6168,7 +6168,7 @@ a:focus {
 }
 
 #event-details input, #event-details button {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 #event-details .formEventName, #event-details .formEventCode {
@@ -6356,6 +6356,30 @@ a:focus {
 
 .survey-list .survey-item .optional .survey-options .option-container input {
   border: 1px solid gray;
+}
+
+#livePollCard.disabled, #informationCard.disabled, #mediaCard.disabled, #surveyCard.disabled {
+  background: lightgray;
+}
+
+#livePollCard.disabled h5, #livePollCard.disabled p, #livePollCard.disabled input, #livePollCard.disabled button, #livePollCard.disabled a, #livePollCard.disabled textarea, #informationCard.disabled h5, #informationCard.disabled p, #informationCard.disabled input, #informationCard.disabled button, #informationCard.disabled a, #informationCard.disabled textarea, #mediaCard.disabled h5, #mediaCard.disabled p, #mediaCard.disabled input, #mediaCard.disabled button, #mediaCard.disabled a, #mediaCard.disabled textarea, #surveyCard.disabled h5, #surveyCard.disabled p, #surveyCard.disabled input, #surveyCard.disabled button, #surveyCard.disabled a, #surveyCard.disabled textarea {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: transparent;
+}
+
+#livePollCard.disabled textarea, #livePollCard.disabled input, #informationCard.disabled textarea, #informationCard.disabled input, #mediaCard.disabled textarea, #mediaCard.disabled input, #surveyCard.disabled textarea, #surveyCard.disabled input {
+  border: 1px solid gray !important;
+  background: transparent;
+}
+
+#livePollCard.disabled button, #informationCard.disabled button, #mediaCard.disabled button, #surveyCard.disabled button {
+  border: 1px solid gray !important;
+  background-color: gray !important;
+  color: #3c3c3e;
 }
 
 @media screen and (max-width: 559px) {
