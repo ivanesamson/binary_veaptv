@@ -27,10 +27,10 @@
     <style>
         .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
         .toggle.ios .toggle-handle { border-radius: 20px; }
-        .toggle-on,.toggle-off { top: -6px; color: white !important; }
-        .btn-success:disabled, .btn-success:focus, .btn-success:hover {
-            background: #1572E8;
-            border: #1572E8;
+        .toggle.ios .toggle-off { background: dimgray !important; border: dimgray !important }
+        .btn { border-radius: 8px; }
+        .btn-success:hover {
+            background-color: #3AA73C !important;
         }
     </style>
 </head>
@@ -133,7 +133,7 @@
                                 <p class="card-text">Setup your Event below.</p>
                             </div>
                             <div class="right">
-                                <a href="#" role="button" class="btn btn-danger rounded-10 px-4">Next</a>
+                                <a href="#" role="button" class="btn btn-danger btn-sm rounded-10 px-4">Next</a>
                             </div>
                         </div>
                     </div>
@@ -148,8 +148,8 @@
                                             <p class="card-text">Enter event name here.</p>
                                         </div>
                                         <form class="formEventName">
-                                            <input type="text" name="inputEventName" class="form-control">
-                                            <button type="submit" class="btn btn-success">Save</button>
+                                            <input type="text" name="inputEventName" class="form-control form-control-sm">
+                                            <button type="submit" class="btn btn-success btn-sm">Save</button>
                                             <div class="d-flex justify-content-between">
 
                                             </div>
@@ -158,8 +158,8 @@
                                             <h5 class="card-title font-weight-bold m-0">Event Code</h5>
                                         </div>
                                         <form class="formEventCode">
-                                            <input type="text" name="inputEventName" class="form-control">
-                                            <button type="submit" class="btn btn-success">Save</button>
+                                            <input type="text" name="inputEventName" class="form-control form-control-sm">
+                                            <button type="submit" class="btn btn-success btn-sm">Save</button>
                                             <div class="d-flex justify-content-between">
                                             </div>
                                         </form>
@@ -173,19 +173,20 @@
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <p>Live Poll</p>
-                                            <input type="checkbox" onclick="checkComponent()" data-toggle="toggle" data-on="On" data-off="Off" data-onstyle="success" data-offstyle="primary" data-size="mini" data-width="40" data-height="20">
+                                            <input type="checkbox" id="checkLivePoll" onclick="checkComponent()" unchecked data-toggle="toggle" data-style="ios" data-size="mini">
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <p>Information</p>
-                                            <input type="checkbox" id="information" checked data-toggle="toggle" data-on="On" data-off="Off" data-onstyle="success" data-offstyle="primary" data-size="mini" data-width="40" data-height="20">
+                                            <input type="checkbox" id="checkInformation" checked data-toggle="toggle" data-style="ios" data-size="mini">
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <p>Media</p>
-                                            <input type="checkbox" id="media" checked data-toggle="toggle" data-on="On" data-off="Off" data-onstyle="success" data-offstyle="primary" data-size="mini" data-width="40" data-height="20">
+                                            <input type="checkbox" id="checkMedia" checked data-toggle="toggle" data-style="ios" data-size="mini">
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <p>Survey</p>
-                                            <input type="checkbox" id="survey" checked data-toggle="toggle" data-on="On" data-off="Off" data-onstyle="success" data-offstyle="primary" data-size="mini" data-width="40" data-height="20">
+                                            <input type="checkbox" id="checkSurvey" checked data-toggle="toggle" data-style="ios" data-size="mini">
+                                        
                                         </div>
                                         
                                     </div>
@@ -195,7 +196,7 @@
                                 <h5 class="font-weight-bold text-secondary">COMPONENTS</h5>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="card py-4 -live-polls">
+                                        <div class="card py-4" id="LiveBroadcastCard">
                                             <div class="card-body d-flex flex-column" style="row-gap: 2vh;">
                                                 <div class="">
                                                     <h5 class="card-title font-weight-bold m-0">Live Brodcast</h5>
@@ -204,18 +205,18 @@
                                                 <form class="formLiveBroadCast">
                                                     <div class="form-row">
                                                         <div class="col-12">
-                                                            <textarea class="form-control" id="inputBroadCast" name="inputBroadCast" rows="3"></textarea>
+                                                            <textarea class="form-control form-control-sm" id="inputBroadCast" name="inputBroadCast" rows="3"></textarea>
                                                         </div>
                                                         <div class="col d-flex justify-content-end">
-                                                            <button type="submit" class="btn btn-primary mt-2 ml-2 rounded-10 px-4">Test</button>
-                                                            <button type="submit" class="btn btn-success mt-2 ml-2 rounded-10 px-4">Save</button>
+                                                            <button type="submit" class="btn btn-primary btn-sm mt-2 ml-2 rounded-10 px-4">Test</button>
+                                                            <button type="submit" class="btn btn-success btn-sm mt-2 ml-2 rounded-10 px-4">Save</button>
                                                         </div>
                                                     </div>
                                                 </form>
                                             
                                             </div>
                                         </div>
-                                        <div class="card py-4 mt-4">
+                                        <div class="card py-4 mt-4" id="livePollCard">
                                             <div class="card-body d-flex flex-column" style="row-gap: 2vh;">
                                                 <div class="">
                                                     <h5 class="card-title font-weight-bold m-0">Live Poll</h5>
@@ -224,11 +225,11 @@
                                                 <form class="formLiveBroadCast">
                                                     <div class="form-row">
                                                         <div class="col-12">
-                                                            <textarea class="form-control" id="inputLivePull" name="inputLivePull" rows="3"></textarea>
+                                                            <textarea class="form-control form-control-sm" id="inputLivePull" name="inputLivePull" rows="3"></textarea>
                                                         </div>
                                                         <div class="col d-flex justify-content-end">
-                                                            <button type="submit" class="btn btn-primary mt-2 ml-2 rounded-10 px-4">Test</button>
-                                                            <button type="submit" class="btn btn-success mt-2 ml-2 rounded-10 px-4">Save</button>
+                                                            <button type="submit" class="btn btn-primary btn-sm mt-2 ml-2 rounded-10 px-4">Test</button>
+                                                            <button type="submit" class="btn btn-success btn-sm mt-2 ml-2 rounded-10 px-4">Save</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -237,47 +238,47 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="card title-card">
+                                        <div class="card title-card" id="userAccountCard">
                                             <div class="card-body d-flex justify-content-between align-items-center">
                                                 <div class="left">
                                                     <h5 class="card-title">User Accounts</h5>
                                                     <p class="card-text">Setup user accounts here.</p>
                                                 </div>
                                                 <div class="right">
-                                                    <a href="#" role="button" class="btn btn-danger rounded-10 px-4">Open</a>
+                                                    <a href="#" role="button" class="btn btn-danger btn-sm rounded-10 px-4">Open</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card title-card mt-4">
+                                        <div class="card title-card mt-4" id="informationCard">
                                             <div class="card-body d-flex justify-content-between align-items-center">
                                                 <div class="left">
                                                     <h5 class="card-title">Information</h5>
                                                     <p class="card-text">Add information here.</p>
                                                 </div>
                                                 <div class="right">
-                                                    <a href="#" role="button" class="btn btn-danger rounded-10 px-4">Open</a>
+                                                    <a href="#" role="button" class="btn btn-danger btn-sm rounded-10 px-4">Open</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card title-card mt-4">
+                                        <div class="card title-card mt-4" id="mediaCard">
                                             <div class="card-body d-flex justify-content-between align-items-center">
                                                 <div class="left">
                                                     <h5 class="card-title">Media</h5>
                                                     <p class="card-text">Add media here.</p>
                                                 </div>
                                                 <div class="right">
-                                                    <a href="#" role="button" class="btn btn-danger rounded-10 px-4">Open</a>
+                                                    <a href="#" role="button" class="btn btn-danger btn-sm rounded-10 px-4">Open</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card title-card mt-4">
+                                        <div class="card title-card mt-4" id="surveyCard">
                                             <div class="card-body d-flex justify-content-between align-items-center">
                                                 <div class="left">
                                                     <h5 class="card-title">Survey</h5>
                                                     <p class="card-text">Add a survey here.</p>
                                                 </div>
                                                 <div class="right">
-                                                    <a href="#" role="button" class="btn btn-danger rounded-10 px-4">Open</a>
+                                                    <a href="#" role="button" class="btn btn-danger btn-sm rounded-10 px-4">Open</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -325,15 +326,36 @@
 
     <script>
         $(function() {
-            checkComponent();
+            $('#checkLivePoll').change(function() {
+                if($(this).prop('checked')) { 
+                    $('#livePollCard').addClass('disabled');
+                } else {
+                    $('#livePollCard').removeClass('disabled');
+                }
+            });
+            $('#checkInformation').change(function() {
+                if($(this).prop('checked')) { 
+                    $('#informationCard').addClass('disabled');
+                } else {
+                    $('#informationCard').removeClass('disabled');
+                }
+            });
+            $('#checkMedia').change(function() {
+                if($(this).prop('checked')) { 
+                    $('#mediaCard').addClass('disabled');
+                } else {
+                    $('#mediaCard').removeClass('disabled');
+                }
+            });
+            $('#checkSurvey').change(function() {
+                if($(this).prop('checked')) { 
+                    $('#surveyCard').addClass('disabled');
+                } else {
+                    $('#surveyCard').removeClass('disabled');
+                }
+            });
         }); 
-        function checkComponent() {
-            $('#livePolls').prop('checked', true).change();
-            if ( $(this).prop('checked') ) {
-                console.log(1);
-
-            }
-        }
+        // checkComponent();
     </script>
 </body>
 </html>
