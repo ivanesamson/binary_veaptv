@@ -6425,7 +6425,7 @@ section.main-login article.event-login .event-body form.register-form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 2vh;
+  row-gap: 1vh;
 }
 
 section.main-login article.event-login .event-body form.register-form .input-container {
@@ -6748,8 +6748,22 @@ nav.footer-nav .footer-menu li a {
 }
 
 .carousel-inner {
-  height: 60vh;
+  height: 55vh;
   overflow-y: auto;
+}
+
+.error-container {
+  text-align: center;
+  color: #B80000;
+  font-size: .8rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin-top: 10px;
+}
+
+.toast {
+  opacity: 1 !important;
+  font-size: .8rem !important;
 }
 
 @media (max-width: 1439px) {

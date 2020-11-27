@@ -6,21 +6,23 @@
             </h3>
         </div>
         <div class="event-body">
-            <form action="#" class="register-form">
+            <div class="error-container"></div>
+            <br/>
+            <form id="registerForm" class="register-form" autocomplete="off">
                 <div class="input-container">
-                    <input type="text" class="form-control" id="inputUs" placeholder="Name">
+                    <input type="text" class="form-control" name="name" placeholder="Name">
                 </div>
                 <div class="input-container">
-                    <input type="password" class="form-control" id="inputPw" placeholder="Password">
+                    <input type="password" class="form-control" name="pw" placeholder="Password">
                 </div>
                 <div class="input-container">
-                    <input type="text" class="form-control" id="inputContact" placeholder="Contact No. eg: 0912-345-6789">
+                    <input type="text" class="form-control" name="contact" placeholder="Contact No. eg: 0912-345-6789">
                 </div>
                 <div class="input-container">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    <input type="email" class="form-control" name="email" placeholder="Email">
                 </div>
                 <div class="input-container my-4">
-                    <button type="submit" class="btn btn-danger btn-block text-white">Register</button>
+                    <button type="submit" id="btnSubmit" class="btn btn-danger btn-block text-white">Register</button>
                 </div>
             </form>
         </div>
